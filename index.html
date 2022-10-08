@@ -73,7 +73,32 @@
                 <svg class="icon-close" width="18" height="18">
                   <use href="./img/symbol-defs.svg#icon-close"></use>
                 </svg>
-              </button>
+              </button>              
+              <form class="order-service">
+                <p class="order-service-text">Залиште свої дані, ми вам передзвонимо</p>
+                  <div class="inputs name">
+                    <label for="name" class="inputs-label">Ім'я</label>
+                    <input type="text" name="name" id="name">
+                  </div>
+                  <div class="inputs tel">
+                    <label for="tel" class="inputs-label">Телефон</label>
+                    <input type="text" name="tel" id="tel">
+                  </div>
+                  <div class="inputs mail">
+                    <label for="email" class="inputs-label">Пошта</label>
+                    <input type="text" name="email" id="email">
+                  </div>
+                  <div class="inputs comment">
+                     <label for="comment" class="inputs-label">Комента</label>
+                     <textarea name="comment" id="comment" placeholder="Введіть текст" cols="30" rows="10"></textarea>
+                  </div>                
+                  <div class="accept">
+                    <input type="checkbox" name="accept" >
+                    <label for="accept" name="accept" id="accept" class="accept-label">Погоджуюсь з розсилкою та приймаю Умови
+                      договору</label>
+                    <button type="submit">Відправити</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
