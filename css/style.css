@@ -341,14 +341,16 @@ address {
 }
 
 /* -------order service------- */
-.order-service{  
-  width: 100%;
+
+.form-order{  
+    width: 448px;   
   
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+  
 }
 
-.order-service-text{
+.form-order-text{
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -360,40 +362,86 @@ address {
 
   color: #212121;
 }
-.inputs{
+.form-field{
   display: flex;
-  flex-direction: column;    
+  flex-direction: column;
+  align-items:start;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
   margin-bottom: 10px;
 }
  
-.inputs-label{
-  width: 448px;
-  height: 40px;
-
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;  
-  letter-spacing: 0.01em;
-
-  color: #757575; 
-}
-
-.accept-label{ 
+.form-field label{
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71; 
-    letter-spacing: 0.03em;
+    font-size: 12px;
+    line-height: 1.16;
+      
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
   
     color: #757575;
 }
 
-.inputs-comment textarea{
-  resize: none;
-}  
+.form-field input{
+  width: 448px;
+  height: 40px;
 
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;  
+
+  color: #757575; 
+}
+
+.form-field ::placeholder{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;    
+  
+    color: rgba(117, 117, 117, 0.5);
+}
+.comment{
+  margin-bottom: 20px;
+}
+.comment textarea{
+  width: 448px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+
+.form-checkbox label{
+  font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;   
+  
+    letter-spacing: 0.03em;
+  
+    color: #757575;
+}
+.form-checkbox input{
+
+}
+ 
+.form-checkbox {
+  
+}
+
+.accept-btn{
+  min-width: 200px;
+  height: 50px;
+  font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    margin: 30px auto 40px;
+
+    color: var(--primari-bg-color);
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
 
 
 /* feature */

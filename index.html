@@ -74,30 +74,33 @@
                   <use href="./img/symbol-defs.svg#icon-close"></use>
                 </svg>
               </button>              
-              <form class="order-service">
-                <p class="order-service-text">Залиште свої дані, ми вам передзвонимо</p>
-                  <div class="inputs name">
-                    <label for="name" class="inputs-label">Ім'я</label>
+              <form class="form-order">
+                <p class="form-order-text">Залиште свої дані, ми вам передзвонимо</p>
+                
+                  <div class="form-field ">
+                    <label for="name">Ім'я</label>
                     <input type="text" name="name" id="name">
                   </div>
-                  <div class="inputs tel">
-                    <label for="tel" class="inputs-label">Телефон</label>
+                  <div class="form-field">
+                    <label for="tel">Телефон</label>
                     <input type="text" name="tel" id="tel">
                   </div>
-                  <div class="inputs mail">
-                    <label for="email" class="inputs-label">Пошта</label>
+                  <div class="form-field">
+                    <label for="email">Пошта</label>
                     <input type="text" name="email" id="email">
                   </div>
-                  <div class="inputs comment">
-                     <label for="comment" class="inputs-label">Комента</label>
-                     <textarea name="comment" id="comment" placeholder="Введіть текст" cols="30" rows="10"></textarea>
+                  <div class="form-field comment">
+                     <label for="comment">Комента</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
                   </div>                
-                  <div class="accept">
-                    <input type="checkbox" name="accept" >
-                    <label for="accept" name="accept" id="accept" class="accept-label">Погоджуюсь з розсилкою та приймаю Умови
+                  <div class="form-checkbox">
+                    <input type="checkbox" name="accept" >                    
+                    <label for="accept" name="accept" id="accept">Погоджуюсь з розсилкою та приймаю Умови
                       договору</label>
-                    <button type="submit">Відправити</button>
-                </div>
+                    </div>              
+                    <button class=" accept-btn" type="submit">Відправити</button>
+                
+              </div>
               </form>
             </div>
           </div>
