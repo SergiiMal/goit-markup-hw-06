@@ -404,7 +404,7 @@ address {
 }
 .comment textarea{
   width: 448px;
-
+  height: 138px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
@@ -420,12 +420,10 @@ address {
     color: #757575;
 }
 .form-checkbox input{
-
-}
- 
-.form-checkbox {
   
 }
+ 
+
 
 .accept-btn{
   min-width: 200px;
