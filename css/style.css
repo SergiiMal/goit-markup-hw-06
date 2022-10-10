@@ -45,6 +45,7 @@ ol {
 
 button {
   cursor: pointer;
+  border-color: var(--accent-color);
 }
 
 body {
@@ -291,7 +292,7 @@ address {
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal{
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
 
@@ -299,19 +300,18 @@ address {
   position: absolute;
   display: flex;
   justify-content: center;
-  
+
   top: 50%;
   left: 50%;
   min-width: 528px;
   min-height: 581px;
- 
+
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-  0px 1px 1px rgba(0, 0, 0, 0.14),
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transform: translate(-50%, -50%) scale(1) ;
+  transform: translate(-50%, -50%) scale(1);
   transition: 250ms var(--timing-function);
 }
 
@@ -320,7 +320,7 @@ address {
   top: 0;
   right: 0;
   display: flex;
-  align-items: center; 
+  align-items: center;
   width: 30px;
   height: 30px;
   margin: 8px;
@@ -333,7 +333,6 @@ address {
 .btn-close:hover {
   border-color: var(--accent-color);
   transition: opacity background-color 250ms var(--timing-function);
-  
 }
 
 .icon-close {
@@ -342,15 +341,14 @@ address {
 
 /* -------order service------- */
 
-.form-order{  
-    width: 448px;   
-  
-    margin-left: auto;
-    margin-right: auto;
-  
+.form-order {
+  width: 448px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.form-order-text{
+.form-order-text {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -362,47 +360,65 @@ address {
 
   color: #212121;
 }
-.form-field{
+.form-field {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items:start;
+  align-items: start;
 
   margin-bottom: 10px;
 }
- 
-.form-field label{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-      
-    letter-spacing: 0.01em;
-    margin-bottom: 4px;
-  
-    color: #757575;
+
+.form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+
+  color: #757575;
 }
 
-.form-field input{
+.form-input {
   width: 448px;
   height: 40px;
 
+  padding-left: 42px;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;  
+  border-radius: 4px;
 
-  color: #757575; 
+  color: #757575;
 }
 
-.form-field ::placeholder{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;    
-  
-    color: rgba(117, 117, 117, 0.5);
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  display: inline-block;
 }
-.comment{
+
+.form-field :focus-within > .form-input {
+  border-color: rgba(76, 13, 223, 0.2);
+}
+
+.form-input:focus ~ .form-icon {
+  fill: var(--accent-color);
+}
+
+.form-field ::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.comment {
   margin-bottom: 20px;
 }
-.comment textarea{
+.comment textarea {
   width: 448px;
   height: 138px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -410,34 +426,43 @@ address {
   resize: none;
 }
 
-.form-checkbox label{
+.checkbox-input:checked + .icon-check {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(../img/icon\ check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.checkbox-label {
   font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;   
-  
-    letter-spacing: 0.03em;
-  
-    color: #757575;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
 }
-.form-checkbox input{
-  
+
+.checkbox-input {
+  appearance: none;
 }
-.accept-btn{
+
+.accept-btn {
   min-width: 200px;
   height: 50px;
   font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 
-    margin: 30px auto 40px;
+  margin: 30px auto 40px;
 
-    color: var(--primari-bg-color);
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+  color: var(--primari-bg-color);
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
-
 
 /* feature */
 
@@ -819,18 +844,17 @@ address {
   fill: currentColor;
 }
 
-
 /*--------subscribe--------*/
 
- .subscribe{  
+.subscribe {
   width: 100%;
   height: 86px;
 
   padding-top: 72px;
   padding-left: 93px;
   padding-bottom: 94px;
- }
-.subscribe-text{
+}
+.subscribe-text {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -839,14 +863,13 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.subscribe-form{
+.subscribe-form {
   display: flex;
 }
- 
- .subscribe-input{
-  
+
+.subscribe-input {
   align-items: center;
   letter-spacing: 0.03em;
 
@@ -857,22 +880,21 @@ address {
   font-size: 1.25;
   line-height: 20px;
   margin-right: 12px;
-   
-  background-color: #2F303A;
+
+  background-color: #2f303a;
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
 
- .btn-send{
+.btn-send {
   display: flex;
-  
+
   align-items: center;
   justify-content: center;
   min-width: 200px;
-  height: 50px;  
-
+  height: 50px;
 
   font-weight: 700;
   font-size: 1.14;
@@ -882,19 +904,16 @@ address {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
- .icon-send{ 
+.icon-send {
   width: 24px;
   height: 24px;
   margin-left: 10px;
- 
+
   fill: var(--primari-bg-color);
- }
-
-
-
+}
 
 /* ----------Portfolio ---------- */
 
@@ -925,7 +944,6 @@ address {
   line-height: 1.62;
   letter-spacing: 0.03em;
 
-  
   background: #f5f4fa;
   border-radius: 4px;
 
@@ -938,8 +956,8 @@ address {
   padding: 6px 25px;
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
   background-color: var(--accent-color);
   color: #ffffff;
 }
