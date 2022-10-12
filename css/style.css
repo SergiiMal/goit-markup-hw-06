@@ -449,10 +449,10 @@ address {
   padding-left: 16px;
 }
 
-.checkbox-input:checked + .icon-check {   
+.checkbox-input:checked ~ .icon-check {   
   background-color: var(--accent-color);
   border-radius: 2px;
-  background-image: url(../img/icon\ check.svg);
+  background-image: url(../img/icon-check.svg);
   background-size: contain;
   background-origin: border-box; 
  
