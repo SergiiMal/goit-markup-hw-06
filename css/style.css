@@ -412,6 +412,7 @@ address {
 .form-input:focus,
 .form-input:hover{
   border-color: #188ce8;
+  transition: 250ms var(--timing-function);
 }
 
 .form-field  ::placeholder {
@@ -450,6 +451,7 @@ address {
 .checkbox-input:focus ~ .icon-check,
 .checkbox-input:hover ~ .icon-check{  
   fill: #188ce8;
+  transition: 250ms var(--timing-function);
 }
 
 .checkbox-label {
@@ -463,6 +465,7 @@ address {
 }
 
 .checkbox-input {
+  margin-left: 12px;
   appearance: none;
 }
 
@@ -480,6 +483,18 @@ address {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+ 
+.accept-btn:hover,
+.accept-btn:focus{
+ background-color: var(--default-color);
+transition: 250ms var(--timing-function);
+}
+
+.terms{
+  text-decoration:underline;
+  text-underline-offset:2px ;
+  color: var(--default-color);  
 }
 
 /* feature */
@@ -688,11 +703,13 @@ address {
 .command-link:hover,
 .command-link:focus {
   background-color: var(--accent-color);
+  transition: 250ms var(--timing-function);
 }
 
 .command-link:hover .command-icon,
 .command-link:focus .command-icon {
   fill: var(--primari-bg-color);
+  transition: 250ms var(--timing-function);
 }
 
 .command-icon {
@@ -754,11 +771,13 @@ address {
 .client-link:hover,
 .client-link:focus {
   border: 1px solid var(--accent-color);
+  transition: 250ms var(--timing-function);
 }
 
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
   fill: var(--accent-color);
+  transition: 250ms var(--timing-function);
 }
 
 .client-icon {
@@ -925,6 +944,12 @@ address {
   color: #ffffff;
 }
 
+.btn-send:hover,
+.btn-send:focus{
+  background-color: var(--default-color);
+  transition:  250ms var(--timing-function);
+}
+
 .icon-send {
   width: 24px;
   height: 24px;
@@ -984,6 +1009,7 @@ address {
 .list .item:focus {
   background-color: var(--accent-color);
   color: var(--primari-bg-color);
+  transition: 250ms var(--timing-function);
 }
 
 /* gallery */
@@ -1004,6 +1030,7 @@ address {
 .gallery-list .item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: 250ms var(--timing-function);
 }
 
 .gallery-list .item:nth-child(3n) {
@@ -1058,6 +1085,7 @@ address {
 .gallery-list .link:hover .overlay-box,
 .gallery-list .link:focus .overlay-box {
   transform: translateY(0%);
+  transition: 250ms var(--timing-function);
 }
 
 .overlay-box {
