@@ -46,7 +46,6 @@ ol {
 button {
   cursor: pointer;
   border-color: var(--accent-color);
-  
 }
 
 body {
@@ -256,8 +255,8 @@ address {
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: var(--primari-bg-color); 
-  border-color: var(--accent-color); 
+  color: var(--primari-bg-color);
+  border-color: var(--accent-color);
   background-color: var(--default-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -342,11 +341,10 @@ address {
 }
 
 .btn-close:hover .icon-close,
-.btn-close:focus .icon-close{
+.btn-close:focus .icon-close {
   fill: var(--accent-color);
   transition: 250ms var(--timing-function);
 }
-
 
 .icon-close {
   fill: #000000;
@@ -356,10 +354,9 @@ address {
 
 .form-order {
   width: 448px;
-  
+
   padding-top: 40px;
   padding-bottom: 40px;
-  
 }
 
 .form-order-text {
@@ -368,12 +365,12 @@ address {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  
+
   padding-bottom: 12px;
 
   color: #212121;
 }
-.form-field {  
+.form-field {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -391,7 +388,7 @@ address {
 
   color: #757575;
 }
-.box-input{
+.box-input {
   position: relative;
   width: 100%;
 }
@@ -416,21 +413,21 @@ address {
   transform: translateY(20%);
 }
 
-.form-input:focus ~ .form-icon { 
+.form-input:focus ~ .form-icon {
   fill: var(--accent-color);
 }
 
-.form-input{
+.form-input {
   outline: none;
 }
 
 .form-input:focus,
-.form-input:hover{
+.form-input:hover {
   border-color: #188ce8;
   transition: 250ms var(--timing-function);
 }
 
-.form-field  ::placeholder {
+.form-field ::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -450,22 +447,21 @@ address {
   resize: none;
 }
 
-.comment .form-input{
+.comment .form-input {
   padding-left: 16px;
   padding-top: 12px;
 }
 
-.checkbox-input:checked ~ .icon-check {   
+.checkbox-input:checked ~ .icon-check {
   background-color: var(--accent-color);
   border-radius: 2px;
   background-image: url(../img/icon-check.svg);
   background-size: contain;
-  background-origin: border-box; 
- 
+  background-origin: border-box;
 }
 
 .checkbox-input:focus ~ .icon-check,
-.checkbox-input:hover ~ .icon-check{  
+.checkbox-input:hover ~ .icon-check {
   fill: #188ce8;
   transition: 250ms var(--timing-function);
 }
@@ -500,17 +496,17 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
- 
+
 .accept-btn:hover,
-.accept-btn:focus{
- background-color: var(--default-color);
- transition: 250ms var(--timing-function);
+.accept-btn:focus {
+  background-color: var(--default-color);
+  transition: 250ms var(--timing-function);
 }
 
-.terms{
-  text-decoration:underline;
-  text-underline-offset:2px ;
-  color: var(--default-color);  
+.terms {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: var(--default-color);
 }
 
 /* feature */
@@ -805,7 +801,7 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-box{
+.footer-box {
   margin-right: 70px;
 }
 
@@ -903,12 +899,11 @@ address {
 /*--------subscribe--------*/
 
 .subscribe {
-  width: 100%;
+  width: 570px;
   height: 86px;
 
-  padding-top: 72px;  
+  padding-top: 72px;
   padding-bottom: 94px;
-  
 }
 .subscribe-text {
   margin-bottom: 20px;
@@ -966,9 +961,9 @@ address {
 }
 
 .btn-send:hover,
-.btn-send:focus{
+.btn-send:focus {
   background-color: var(--default-color);
-  transition:  250ms var(--timing-function);
+  transition: 250ms var(--timing-function);
 }
 
 .icon-send {
@@ -1051,7 +1046,7 @@ address {
 .gallery-list .item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: 250ms var(--timing-function);
+  transition: 250ms var(--timing-function);
 }
 
 .gallery-list .item:nth-child(3n) {
