@@ -268,11 +268,13 @@ address {
 .btn:hover,
 .btn:focus {
   background-color: var(--accent-color);
+  transition: 250ms var(--timing-function);
 }
 
 .btn:active {
   background-color: var(--primari-bg-color);
   color: var(--default-color);
+  transition: 250ms var(--timing-function);
 }
 
 .backdrop {
@@ -332,10 +334,18 @@ address {
   border-radius: 50%;
 }
 
-.btn-close:hover {
+.btn-close:hover,
+.btn-close:focus {
   border-color: var(--accent-color);
   transition: opacity background-color 250ms var(--timing-function);
 }
+
+.btn-close:hover .icon-close,
+.btn-close:focus .icon-close{
+  fill: var(--accent-color);
+  transition: 250ms var(--timing-function);
+}
+
 
 .icon-close {
   fill: #000000;
