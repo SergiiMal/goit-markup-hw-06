@@ -451,17 +451,20 @@ address {
   padding-top: 12px;
 }
 
-.checkbox-input:checked ~ .icon-check {
+.checkbox-input:checked ~ .icon-check {  
   background-color: var(--accent-color);
   border-radius: 2px;
-  background-image: url(../img/icon-check.svg);
+  background-image: url(../img/icon-check.svg); 
   background-size: contain;
+  background-position:bottom ;
   background-origin: border-box;
+  border-color: rgb(206, 21, 21);
+  fill: var(--accent-color);
 }
 
 .checkbox-input:focus ~ .icon-check,
 .checkbox-input:hover ~ .icon-check {
-  fill: #188ce8;
+  fill: var(--accent-color);
   transition: 250ms var(--timing-function);
 }
 
@@ -504,7 +507,7 @@ address {
 
 .terms {
   text-decoration: underline;
-  text-underline-offset: 2px;
+  text-underline-offset: 3px;
   color: var(--default-color);
 }
 
